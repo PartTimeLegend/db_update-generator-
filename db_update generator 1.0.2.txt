@@ -1,0 +1,106 @@
+############################################### 
+##   Hack Title:   db_update generator 
+##   Hack Version:   1.0.2 
+##   Author:      Freakin' Booty ;-P & Antony Bailey 
+##   Description:  Creates a form into which you enter your SQL and a db_update.php file is then created. You can
+##		   either copy/paste the file, or download it onto your computer. 
+##   Compatibility:  2.0.6 
+## 
+##   Installation Level: Easy 
+##   Installation Time: 2 minutes
+##   Files To Edit: 1
+##      language/lang_english/lang_main.php
+##
+##   Included Files: 5
+##      db_generator.php
+##      admin/admin_db_generator.php
+##      language/lang_english/db_generator.tpl
+##      templates/subSilver/db_generator_body.tpl
+##      templates/subSilver/admin/admin_db_generator.tpl
+## 
+##	History:
+##	0.0.1:	Initial code.
+##	0.0.2:	Template fixed up and a few new bits added.
+##	0.0.3:	Language variables added to language files, make it easier for translation.
+##	0.0.4:	Added the possibility to download the db_update.php file - mainly to add ease-of-use and to prevent
+##		people getting "headers already sent" errors. You can now specify your own table prefix - needed if
+##		the generator is not on your own server.
+##	0.0.5:	Fixed one language variable in the template.
+##	0.0.6:	The default table prefix is now added in the field by default.
+##	0.0.7:  The default table prefix, is now pulled from your phpBB config.php file, making the utility easier for a user.
+##	0.0.8:	Cleaned up the db_update.php template.
+##	0.0.8:	Added the admin panel option.
+##	0.0.9:	Fixed a little spelling error.
+##	0.1.0:	The table prefix is no longer retrieved from your forum, nor are you able to put it in. However,
+##		the default prefix in the SQL you enter, will be replaced with an equivalent that enables you to use it
+##		on any phpBB, regardless of the table prefix used there.
+##		Fixed up the code a little, for it to be more efficient.
+##      1.0.0:  Fixed admin bug. And taken to 1.0.0 for release. Change copyright link to sourceforge.net
+##      1.0.1:  Updated RapidDr3am.SlackSlash.net to RapidDr3am.net
+##      1.0.2:  Fixed a parse error my mistake thanks Kipper. ;)
+## 
+##   Author Notes: 
+##      Notes. 
+## 
+##   Support:      http://www.phpbbsupport.co.uk 
+##   Copyright:      ©2003 db_update generator 1.0.2 - Freakin' Booty ;-P & Antony Bailey
+## 
+############################################### 
+##   You downloaded this hack from phpBBSupport.co.uk, as such this is not a official phpBB hack. 
+##   This means that support can not be found for this at phpBB.com, so please visit http://www.phpbbsupport.co.uk 
+############################################### 
+## 
+############################################### 
+##   This program is free software; you can redistribute it and/or 
+##   modify it under the terms of the GNU General Public License 
+##   as published by the Free Software Foundation; either version 2 
+##   of the License, or (at your option) any later version. 
+## 
+##   This program is distributed in the hope that it will be useful, 
+##   but WITHOUT ANY WARRANTY; without even the implied warranty of 
+##   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+##   GNU General Public License for more details. 
+## 
+##   http://www.gnu.org/copyleft/gpl.html 
+############################################### 
+#
+#-----[ COPY ]--------------------------------------------
+#
+db_generator.php							=> db_generator.php
+admin/admin_db_generator.php				=> admin/admin_db_generator.php
+language/lang_english/db_generator.tpl		=> language/lang_english/db_generator.tpl
+templates/subSilver/db_generator_body.tpl	=> templates/subSilver/db_generator_body.tpl
+templates/subSilver/admin/admin_db_generator.tpl	=> templates/subSilver/admin/admin_db_generator.tpl
+
+#
+#-----[ OPEN ]--------------------------------------------
+#
+# Make sure to edit this file for every language installed
+#
+language/lang_english/lang_main.php
+
+#
+#-----[ FIND ]--------------------------------------------
+#
+//
+// That's all Folks!
+// -------------------------------------------------
+
+#
+#-----[ BEFORE, ADD ]-------------------------------------
+#
+//
+// db_update generator
+//
+$lang['Db_update_generator'] = 'db_update generator';
+$lang['Instructions'] = 'Instructions';
+$lang['SQL_instructions'] = 'This piece of software will create PHP files that will allow you to update your database using your browser. There are a few things you must look after when you insert an SQL in the box below.<br />First of all, make sure that every SQL query is ending with a semicolon (;). If not, the file created will be faulty. Next, ensure that the tables have the "phpbb_" prefix. This will automatically be replaced with a little piece of code that enabled you to use the db_update.php file on any forum regardless of what the table prefix is set to.';
+$lang['Enter_SQL'] = 'Enter SQL';
+$lang['Enter_SQL_explain'] = 'MySQL is the world\'s most popular open source database, recognized for its speed and reliability.';
+$lang['Output_SQL'] = 'SQL Output';
+$lang['Output_SQL_explain'] = 'Copy and paste the text from the textarea on the right into a blank file. Save the file as <u>db_update.php</u> and upload it to your server. Run it once by accessing with your browser.<br /><br />Alternatively, click the download button to download the file directly to your computer (recommended).';
+$lang['Download'] = 'Download';
+# 
+#-----[ SAVE & CLOSE ALL FILES ]-------------------------- 
+# 
+#End of Hack

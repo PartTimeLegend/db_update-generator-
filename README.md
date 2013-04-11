@@ -1,0 +1,1 @@
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=parttimelegend&url=https://github.com/PartTimeLegend/db_update-generator-&title=db_update generator&language=&tags=github&category=software) 

@@ -1,1 +1,2 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/87e7a9fe74854b84ba1d8aa8e0e67fa1)](https://www.codacy.com/app/PartTimeLegend/db_update-generator-?utm_source=github.com&utm_medium=referral&utm_content=PartTimeLegend/db_update-generator-&utm_campaign=badger)
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=parttimelegend&url=https://github.com/PartTimeLegend/db_update-generator-&title=db_update generator&language=&tags=github&category=software) 
